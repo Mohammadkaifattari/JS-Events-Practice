@@ -6,26 +6,7 @@
     <title>Document</title>
 </head>
 <style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html,body{
-    background-color: cornsilk;
-    color: burlywood;
-    height: 100%;
-    width: 100%;
-
-}
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-input{
+    /* input{
     display: none;
 }
 
@@ -36,10 +17,76 @@ div{ color: aliceblue;
 }
 div:hover{
 background-color: rgb(58, 10, 216);;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+html,body{
+    background-color: cornsilk;
+    color: black;
+    height: 100%;
+    width: 100%;
+
+}
+form {
+
+    padding: 40px;
+    align-items: center;
+   
+    
+}
+input{
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+.card{
+    border: 3px solid black ;
+    width: 250px ;
+    height: 250px;
+padding: 20px;
+}
+.profile{
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+
+overflow: hidden;
+
+    
+}
+.profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+ h3{
+    padding: 20px 0px;
+ }
+ h4{
+    padding: 10px 0 ;
+ }
+ p{
+  font-weight: bolder;
+ }
 </style>
 <body>
-    <main> <input type="file" id="fi"><div id="btn">Upload File</div></main>
+    <form action="">
+        <input type="text" placeholder="Pic Url">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Bio">
+        <input type="text" placeholder="About">
+        <input type="submit">
+
+    </form>
+    <main>
+        
+    </main>
  
     <script src="apps.js"></script>
 </body>
