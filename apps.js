@@ -64,11 +64,28 @@
 // })
 // })
  
-let abcd = document.querySelector("#abcd")
+// let abcd = document.querySelector("abcd")
 
-window.addEventListener("mousemove" , function (detls) {
-    console.log(detls)
-    let yval = abcd.style.top = detls.clientY - 50+ "px"
-     let xval = abcd.style.left = detls.clientX - 50 + "px"
+// window.addEventListener("mousemove" , function (detls) {
+//     console.log(detls)
+//     let yval = abcd.style.top = detls.clientY - 50+ "px"
+//      let xval = abcd.style.left = detls.clientX - 50 + "px"
     
-})
+// })
+let ul = document.querySelector("ul");
+let lis = document.querySelectorAll("li");
+
+ul.addEventListener("click", function (e) {
+    console.dir(e.target);
+    
+    if (e.target.tagName === "LI") {
+        
+        // Sab ko red kar do (active remove)
+        lis.forEach((li) => {
+            li.classList.remove("active");
+        });
+
+        // Jis pe click hua usko blue karo
+        e.target.classList.add("active");
+    }
+});
