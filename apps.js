@@ -72,20 +72,30 @@
 //      let xval = abcd.style.left = detls.clientX - 50 + "px"
     
 // })
-let ul = document.querySelector("ul");
-let lis = document.querySelectorAll("li");
+// let ul = document.querySelector("ul");
+// let lis = document.querySelectorAll("li");
 
-ul.addEventListener("click", function (e) {
-    console.dir(e.target);
+// ul.addEventListener("click", function (e) {
+//     console.dir(e.target);
     
-    if (e.target.tagName === "LI") {
+//     if (e.target.tagName === "LI") {
         
-        // Sab ko red kar do (active remove)
-        lis.forEach((li) => {
-            li.classList.remove("active");
-        });
+//         // Sab ko red kar do (active remove)
+//         lis.forEach((li) => {
+//             li.classList.remove("active");
+//         });
 
-        // Jis pe click hua usko blue karo
-        e.target.classList.add("active");
+//         // Jis pe click hua usko blue karo
+//         e.target.classList.add("active");
+//     }
+// });
+let count = 11
+let tm = setInterval(function () {
+
+    if (count >= 2) {
+        count--;
+        console.log(count);
+        
     }
-});
+     else clearInterval(tm)
+},1000)
